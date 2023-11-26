@@ -7,14 +7,31 @@ th{
 td{
     border:1px black solid;
 }
-#Button{
+.Button{
+    display:flex;
     width: 150px;
     height: 50px;
     background-color: aqua;
-    text-align: center;
-    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
     margin-top:20px;
 }
-#Button:hover{
+.Button:hover{
     background-color: aquamarine;
+}
+#container{
+    display:flex;
+    justify-content: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+@media (min-width:600px){
+    body{
+        background-color:red;
+    }
+}
+@media (max-width:599px){
+    body{
+        background-color: blue;
+    }
 }
