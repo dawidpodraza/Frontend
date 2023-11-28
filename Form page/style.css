@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+#container{
+    background-color: rgb(150, 225, 150);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#full{
+    background-color: antiquewhite;
+}
+#content{
+    
+    min-width: 500px;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+#left{
+    display: flex;
+    flex-direction:row;
+}
+fieldset{
+    margin:10px 10px;
+}
+form{
+    margin-bottom: 20px;
+}
+label{
+    display:flex;
+    flex-direction: column;
+}
+footer{
+    background-color: black;
+    color:antiquewhite;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+
+
+

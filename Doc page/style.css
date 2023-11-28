@@ -1,0 +1,14 @@
+table,th,td{
+    border: solid 1px;
+    background-color: aquamarine;
+}
+.top{
+    font-size: large;
+}
+th{
+    font-size: small;
+    min-width: 200px;
+}
+tr{
+    height: 60px;
+}
