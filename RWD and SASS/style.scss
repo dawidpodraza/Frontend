@@ -46,6 +46,10 @@ nav{
         text-align: center;
     }
 }
+#content_mini{
+    display:flex;
+    justify-content: center;
+}
 #footer_down{
     @include center;
     @include styling_border();
@@ -55,7 +59,6 @@ nav{
 
 @media only screen and (max-width: 600px) {
     nav{
-      @extend nav;
       flex-wrap:wrap;
   }
 }
