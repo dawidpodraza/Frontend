@@ -16,7 +16,6 @@ header #main_title {
 nav {
   display: flex;
   justify-content: center;
-  flex-wrap: 1;
   background-color: rgb(242, 235, 226);
   padding: 10px;
   border-radius: 20px;
@@ -44,6 +43,11 @@ nav .button_nav {
   text-align: center;
 }
 
+#content_mini {
+  display: flex;
+  justify-content: center;
+}
+
 #footer_down {
   display: flex;
   justify-content: center;
@@ -57,20 +61,7 @@ nav .button_nav {
 /* Media queries na końcu pliku */
 @media only screen and (max-width: 600px) {
   nav {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(242, 235, 226);
-    padding: 10px;
-    border-radius: 20px;
-    border-color: antiquewhite;
-    margin: 15px;
     flex-wrap: wrap;
-  }
-  nav .button_nav {
-    padding: 5px 40px;
-    margin: 0px 0px 10px 10px;
-    border-radius: 10px;
-    border-color: rgb(248, 242, 242);
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
