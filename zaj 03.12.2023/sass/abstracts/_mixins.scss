@@ -1,0 +1,20 @@
+// zastosowanie mixin
+@mixin borders{      
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(73, 73, 73);
+}
+@mixin text-mod{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+@mixin borders-2{
+    border:1px solid rgb(210, 248, 58);
+    border-radius: 8px;
+    box-shadow:  10px 5px 5px rgb(244, 168, 168);
+}
+
+@mixin highlighted($element,$color){
+    
+}

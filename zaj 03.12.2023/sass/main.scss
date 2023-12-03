@@ -1,0 +1,94 @@
+@import "abstracts/_variables.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_functions.scss";
+
+@import "base/_animations.scss";
+@import "base/_base.scss";
+@import "base/_colors.scss";
+@import "base/_typography.scss";
+@import "base/_utilities.scss";
+
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
+@import "pages/_cv.scss";
+@import "pages/_index.scss";
+
+
+
+
+
+body{
+    
+    background-color: $primary-background-color;
+
+    #address ,#work, #skills,#education,#preferences,#personal{
+        padding: $paddings;
+    }
+   
+    #menu{
+        display:flex;
+        justify-content: space-around;
+        padding: $paddings;
+        @include borders();
+
+        a{
+            @include borders();
+            padding: $paddings;
+            width: 20%;
+            text-align: center;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+        
+    }
+    h1{
+        font-size: map-get($map: $font-sizes, $key:xlarge );
+        @include text-mod();
+    }
+    h2{
+        // dziedziczenie 
+        @extend h1;  
+        @include borders();
+        color:$primary-color;
+        background-color: aqua;
+        
+    }
+    h3{
+        font-size: map-get($map: $font-sizes, $key:small );
+        text-align: center;
+    }
+    #personal_table{
+        @include borders-2();
+    }
+    table{
+        @include borders();
+        width: 100%;
+
+       
+
+        td{
+            background-color:$primary-color;
+            text-align: left;
+
+            // użycie parent "&"
+            &:hover{
+                background-color: $primary-color-hover;      
+            }
+            
+        }
+    }
+   
+    p{
+        text-align: center;
+    }
+    //interpolacja
+    footer{
+        p:after{
+            content: "Wersja CV: #{$version}";
+        }
+    }
+    
+}

@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(200, 193, 193);
+}
+body #address, body #work, body #skills, body #education, body #preferences, body #personal {
+  padding: 10px 10px 10px 10px;
+}
+body #menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(73, 73, 73);
+}
+body #menu a {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(73, 73, 73);
+  padding: 10px 10px 10px 10px;
+  width: 20%;
+  text-align: center;
+}
+body #menu a:hover {
+  background-color: rgb(116, 133, 242);
+}
+body h1, body h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body h2 {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(73, 73, 73);
+  color: rgb(116, 133, 242);
+  background-color: aqua;
+}
+body h3 {
+  font-size: 18px;
+  text-align: center;
+}
+body #personal_table {
+  border: 1px solid rgb(210, 248, 58);
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgb(244, 168, 168);
+}
+body table {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(73, 73, 73);
+  width: 100%;
+}
+body table td {
+  background-color: rgb(116, 133, 242);
+  text-align: left;
+}
+body table td:hover {
+  background-color: rgb(132, 153, 237);
+}
+body p {
+  text-align: center;
+}
+body footer p:after {
+  content: "Wersja CV: 1.1";
+}/*# sourceMappingURL=main.css.map */
