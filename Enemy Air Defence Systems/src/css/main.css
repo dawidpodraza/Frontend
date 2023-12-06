@@ -1,0 +1,75 @@
+body {
+  background-image: url("../img/background2.jpg");
+}
+body h1 {
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+}
+body h2 {
+  font-size: x-large;
+  text-transform: uppercase;
+  text-align: center;
+}
+body h3 {
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+}
+body #content #article-content {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(217, 217, 240);
+  padding: 10px;
+  height: 100% nav;
+  box-shadow: 5px 5px 5px rgb(114, 113, 113);
+  margin-top: 10px;
+}
+body #content #article-content #photo-and-spec-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body #content #article-content #photo-and-spec-box #photo {
+  max-width: 400px;
+}
+body #content #article-content #photo-and-spec-box #photo img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+body #content #article-content #photo-and-spec-box .specification {
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+nav {
+  box-shadow: 5px 5px 5px rgb(114, 113, 113);
+  border-radius: 10px;
+}
+
+.nav-panel, .nav-panel .nav-button {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(217, 217, 240);
+}
+.nav-panel a, .nav-panel .nav-button a {
+  text-decoration: none;
+  color: black;
+}
+.nav-panel .nav-button {
+  padding: 10px;
+  margin: 8px 5px 8px 5px;
+  background-color: rgb(184, 184, 192);
+  width: 7em;
+  position: relative;
+}
+.nav-panel .nav-button:hover {
+  background-color: rgb(163, 163, 244);
+}/*# sourceMappingURL=main.css.map */

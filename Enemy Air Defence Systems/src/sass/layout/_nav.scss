@@ -1,0 +1,35 @@
+nav{
+    
+    box-shadow: 5px 5px 5px rgb(114, 113, 113);
+    border-radius: 10px;
+}
+
+.nav-panel{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:$primary-background-color;
+    
+    
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+    .nav-button{
+        @extend .nav-panel;
+        padding:10px;
+        margin:8px 5px 8px 5px;
+        background-color:$button-color;
+        width:7em;
+        position: relative;
+        
+
+        &:hover{
+            background-color:$button-color-hover;
+        }
+    }
+}

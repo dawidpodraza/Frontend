@@ -1,0 +1,63 @@
+body{
+    
+    background-image: url("../img/background2.jpg");
+    
+   
+    h1{
+        font-size: xx-large;
+        @include h-styles;
+        
+    }
+
+    h2{
+        font-size: x-large;
+        @include h-styles;
+    }
+
+    h3{
+        font-size: large;
+        @include h-styles;
+    }
+
+    #content{
+        
+        #article-content{
+            
+            border:1px solid black;
+            border-radius: 10px;
+            background-color:$primary-background-color;
+            padding:10px;
+            height: 100% nav;
+            box-shadow: 5px 5px 5px rgb(114, 113, 113);
+            margin-top: 10px;
+            
+            
+
+            #photo-and-spec-box{
+
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                #photo{
+                    max-width:400px;
+                    
+                    img{
+                        
+                        max-width: 100%;
+                        border-radius:20px;
+                        
+                        }
+                }
+                .specification{
+                    margin:10px;
+                    padding:10px;
+                }
+            }    
+        }
+
+    }    
+
+    
+
+}
