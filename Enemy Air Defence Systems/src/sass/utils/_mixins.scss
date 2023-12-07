@@ -2,3 +2,8 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+@mixin color($text-color){
+    color:$text-color;
+}
+//mixin z argumentami

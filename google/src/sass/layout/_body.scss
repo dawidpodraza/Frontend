@@ -1,0 +1,21 @@
+body{
+    background-color: $primary-background-color;
+    
+}
+header{
+    display:flex;
+    justify-content: flex-end;
+    color:white;
+    
+    p{
+        margin:0px 5px 0px 5px;
+    }
+}
+.content-box{
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+.logo-picture{
+    margin:50px;
+}
+
