@@ -1,7 +1,7 @@
 .search-box {
   border-radius: 30px;
   border: 1px solid #5f6368;
-  width: 50em;
+  width: 50vw;
   height: 3em;
   padding: 5px;
   margin: 10px;
@@ -10,6 +10,7 @@
 
 body {
   background-color: rgb(32, 33, 36);
+  margin: 0px;
 }
 
 header {
@@ -23,11 +24,29 @@ header p {
 
 .content-box {
   text-align: center;
-  padding: 5px 5px 5px 5px;
 }
 
 .logo-picture {
   margin: 50px;
+}
+
+.space-box {
+  height: 13vw;
+}
+
+.footer-box {
+  background-color: #171717;
+  min-height: 6.9vw;
+  text-align: left;
+  color: white;
+  margin: none;
+  padding: 10px;
+}
+.footer-box hr {
+  border: 0.5px thin gray;
+}
+.footer-box a {
+  margin-right: 50px;
 }
 
 .button {

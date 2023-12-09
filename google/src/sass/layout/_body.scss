@@ -1,5 +1,6 @@
 body{
     background-color: $primary-background-color;
+    margin:0px;
     
 }
 header{
@@ -13,9 +14,30 @@ header{
 }
 .content-box{
     text-align: center;
-    padding: 5px 5px 5px 5px;
 }
 .logo-picture{
     margin:50px;
+}
+.space-box{
+    height: 13vw;
+}
+
+.footer-box{
+    
+        background-color: #171717;
+        min-height: 6.9vw;
+        text-align: left;
+        color:white;
+        margin:none;
+        padding: 10px;
+
+        hr{
+            border:0.5px thin gray;
+        }
+
+        a{
+            margin-right: 50px;
+        }
+    
 }
 
