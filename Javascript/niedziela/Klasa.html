@@ -44,6 +44,8 @@
 
                     if(this.login===login && this.password ===password){
                         btnLogout.disabled = false
+                        window.localStorage.setItem("login",true)
+                        //zapisanie status logowania w pamieci lokalnej
                     }else{
                         alert("no")
                     }
@@ -68,6 +70,8 @@
 
             btnLogout.addEventListener("click",()=>{
                 btnLogout.disabled = true
+                window.localStorage.setItem("login",false)
+                //wlogowanie z pamieci local storage
             })
 
         

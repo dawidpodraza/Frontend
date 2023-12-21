@@ -16,7 +16,7 @@
             <div class="col-6">
                 <div class="card border-secondary">
                     <div class="card-body">
-                        <h4 class="card-title">Znaczniki</h4>
+                        <h4  class="card-title">Znaczniki</h4>
 
                         <div class="mb-3">
                             <label for="" class="form-label">element
@@ -44,7 +44,7 @@
                             </label>
                             <select class="form-select form-select-lg" name="" id="selectedColor">
                                 <option selected></option>
-                                <option value="">red</option>
+                                <option value="red">red</option>
                                 <option value="">green</option>
                                 <option value="">blue</option>
                             </select>
@@ -59,7 +59,7 @@
         </div>
         <div class="row justify-content-center align-items-center g-2">
             <div class="col">
-                H1 <h1>Lorem ipsum dolor sit.</h1>
+                H1 <h1 id="dupa2">Lorem ipsum dolor sit.</h1>
                 <hr>
                 p <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus laboriosam accusamus
                     ex
@@ -77,25 +77,25 @@
 
     </div>
     <script>
-        const selectedElement = document.querySelector("#selectedElement");
-        const selectedColor = document.querySelector("#selectedColor");
-
-
-
-        changeStyle = () => {
-            var color = selectedColor.options[selectedColor.selectedIndex].text;
-            var element = selectedElement.options[selectedElement.selectedIndex].value;
-            var items = document.getElementsByTagName(element);
-
-            for (let i = 0; i < items.length; i++) {
-                items[i].style.color = color;
+        var element = document.getElementById("selectedElement")
+        var color = document.getElementById("selectedColor")
+        var hStyle = document.getElementById("dupa2")
+        var pStyle = document.getElementsByName("p")
+        
+        function changeStyle(){
+            if((element.value == "h1") && (color.value == "red")){
+                hStyle.style.color = "red"
+                
+                for (var p in document.getElementsByTagName('p')) { 
+                // Skip the collection elements that are not indexed by numbers, such as 'length'
+                if (!isNaN(p) === true) {
+                    document.getElementsByTagName('p')[p].style.color = 'yellow'; 
+                }
             }
-
-
-        }
-
-
-
+            }else{
+                hStyle.style.color = ""
+            }
+    }
 
     </script>
 
