@@ -1,0 +1,10 @@
+
+#container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding:10px;
+    background-color: rgb(178, 183, 186);
+    
+}

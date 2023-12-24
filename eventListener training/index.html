@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="nav-bar">
+            <p>ASDASD</p>
+    </nav>
+    <main id="container">
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+        <div class="box">Test Text...</div>
+    </main>
+
+    <script>
+        let boxes = document.querySelectorAll(".box");
+
+        boxes.forEach(function(box)
+            {
+                box.addEventListener("mouseover",foo);
+                box.addEventListener("mouseout",fooOut);
+            }
+        );
+
+        function foo(){
+            this.style.color = 'red';
+            this.style.backgroundColor = 'black'
+        }
+        function fooOut(){
+            this.style.color = 'black';
+            this.style.backgroundColor = 'yellow'
+        }
+
+
+    </script>
+    
+</body>
+</html>

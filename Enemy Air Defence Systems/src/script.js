@@ -8,9 +8,22 @@ function clock(){
     let seconds = date.getSeconds();
     if(seconds<10){seconds="0"+seconds}
 
-    document.getElementById("clock").innerHTML = "Czas: "+hours+":"+minutes+":"+seconds;
+    document.getElementById("clock").innerHTML = hours+":"+minutes+":"+seconds;
 
    setTimeout("clock();",1000);
 }
+
+
+
+//test.addEventListener(
+ //   "mouseover", over);
+
+    function over(){
+        document.getElementById("clock").style.color ="red";
+    }
+
+    function outmouse(){
+        document.getElementById("clock").style.color ="black"
+    }
 
 

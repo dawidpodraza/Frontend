@@ -6,4 +6,7 @@
 @mixin color($text-color){
     color:$text-color;
 }
-//mixin z argumentami
+@mixin font-styles{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+}
