@@ -8,18 +8,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Exo+2:wght@500&display=swap" rel="stylesheet">
+   
 
     <link rel="stylesheet" href="css/main.css">
 
 
-    <script type="text/javascript" src="script.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
     
 </head>
-<body onload="clock();">
-    <header>  
+<body>
+    <header id ="titlebox"> 
+
         <h1 id="title">Enemy Air Defence Systems</h1>
-        <div id="clock" onmouseover="over()" onmouseout="outmouse()"></div>
+        
     </header>
     
    
@@ -34,9 +35,7 @@
                         <a href="sa-9.html"><div class="nav-button">SA-9</div></a>
                         <a href="sa-13.html"><div class="nav-button">SA13</div></a>
                         <a href="sa-22.html"><div class="nav-button">SA22</div></a>
-                        <a href=""><div class="nav-button">---</div></a>
-                        <a href=""><div class="nav-button">---</div></a>
-                        <a href=""><div class="nav-button">---</div></a>
+                        
                     </div>
                 </nav>
             </aside>
@@ -44,6 +43,10 @@
                 <div id="article-content">
                     <h2>Air Defence System for JTAC</h2>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+                    <div id="photo-and-spec-box">
+                        <div id="photo"><img src="img/home.jpg" alt="air defence photo"></div>
+                    
                        
                 </div>
             </article>
@@ -53,6 +56,17 @@
     <footer>
         <p>Made by DawPod 2023&REG;</p>
     </footer>
+
+    <script>
+        let title = document.querySelector("#title")
+        let btn = document.querySelector(".nav-button")
+
+
+        btn.addEventListener("mouseover", ()=>{title.style.color = "white" })
+
+    
+
+    </script>
     
 </body>
 </html>
