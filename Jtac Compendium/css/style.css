@@ -244,4 +244,53 @@ textarea {
     page-break-after: avoid;
   }
 }
+#page-title{
+  text-align: center;
+  text-transform:uppercase;
+}
+.menu{
+  display:flex;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: brown;
+  color:whitesmoke;
+  height:60px;
+}
+.menu-elements{
+  border:1px solid grey;
+  border-radius: 4px;
+  padding:8px;
+
+}
+.menu-elements:hover{
+  background-color: darkslategrey;
+}
+ul:hover >li{
+  display:block;
+
+}
+ul {
+  list-style-type: none;
+  padding:8px;
+  margin:5px;
+
+}
+li{
+  background-color: brown;
+  border:1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  display:none;
+
+}
+
+li:hover{
+  background-color: darkslategrey;
+}
+body{
+  background-color: darkslategrey;
+}
+
+
 
