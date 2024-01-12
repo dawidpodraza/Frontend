@@ -244,6 +244,13 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* MY CSS for that project
+ -------------------------------------------------------------------------------*/
+
+body{
+  background-color:tan;
+}
 #page-title{
   text-align: center;
   text-transform:uppercase;
@@ -257,13 +264,6 @@ textarea {
   background-color: brown;
   color:whitesmoke;
   height:5rem;
-
-
-
-
-
-
-
 }
 .menu-elements{
 
@@ -277,7 +277,7 @@ textarea {
 .menu-elements:hover{
   background-color: darkslategrey;
 }
-ul:hover >li{
+ul:hover >a{
   display:block;
   position: relative;
 
@@ -288,22 +288,23 @@ ul {
   margin:5px;
 
 }
-li{
+a{
   background-color: brown;
   border:1px solid grey;
   border-radius: 4px;
   padding: 5px;
+  color:whitesmoke;
+  text-align: center;
+  text-decoration: none;
   display:none;
 
-
 }
 
-li:hover{
-  background-color: darkslategrey;
+
+a:hover{
+  background-color: grey;
 }
-body{
-  background-color: darkslategrey;
-}
+
 article{
   margin:10px;
   text-align: justify;
@@ -316,6 +317,13 @@ img{
   border-radius:5px;
   margin:10px;
 
+}
+footer{
+  text-align: center;
+  color:whitesmoke;
+  background-color: brown ;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 650px) {
   .menu{
