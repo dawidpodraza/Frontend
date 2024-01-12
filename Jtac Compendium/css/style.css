@@ -250,17 +250,28 @@ textarea {
 }
 .menu{
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   border: 1px solid grey;
   border-radius: 5px;
   background-color: brown;
   color:whitesmoke;
-  height:60px;
+  height:5rem;
+
+
+
+
+
+
+
 }
 .menu-elements{
+
   border:1px solid grey;
   border-radius: 4px;
   padding:8px;
+  width:10rem;
+  text-align: center;
 
 }
 .menu-elements:hover{
@@ -268,6 +279,7 @@ textarea {
 }
 ul:hover >li{
   display:block;
+  position: relative;
 
 }
 ul {
@@ -283,6 +295,7 @@ li{
   padding: 5px;
   display:none;
 
+
 }
 
 li:hover{
@@ -290,6 +303,24 @@ li:hover{
 }
 body{
   background-color: darkslategrey;
+}
+article{
+  margin:10px;
+  text-align: justify;
+}
+img{
+  float:left;
+  width:20rem;
+  height:15rem;
+  border:1px solid black;
+  border-radius:5px;
+  margin:10px;
+
+}
+@media only screen and (max-width: 650px) {
+  .menu{
+    height:10rem;
+  }
 }
 
 
